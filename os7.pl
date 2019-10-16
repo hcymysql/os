@@ -133,7 +133,7 @@ close(LIMITS1);
 
 ###########################################
 
-@ARGV = "/etc/default/grub.conf";
+@ARGV = "/etc/default/grub";
 
 local $^I='.bak';
 
