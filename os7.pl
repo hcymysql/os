@@ -10,7 +10,7 @@ use Switch;
 
 #####1) 服务关闭#####
 
-@server_name=split('\n',`systemctl list-unit-files | grep enabled`);
+@server_name=split('\n',`systemctl list-unit-files | grep enabled | awk '{print \$1}'`);
 
 print "默认打开crond,network,rsyslog,sshd服务,postfix和firewalld服务初始化会关闭.\n\n";
 
