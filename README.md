@@ -11,5 +11,7 @@ centos6/7 系统初始化脚本
 在ssh界面执行以下命令即可一键更换yum源为CentOS的Vault源（包括CentOS官方和阿里云的源）：
 
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://files.tttidc.com/centos6/Centos-6.repo
+
 wget -O /etc/yum.repos.d/epel.repo http://files.tttidc.com/centos6/epel-6.repo
+
 yum makecache
